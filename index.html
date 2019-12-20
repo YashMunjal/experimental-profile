@@ -1,42 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
+<!Doctypehtml>
+  <html lang="en">
 
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8">
+    <title>Yash Munjal</title>
+  </head>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-  <script src="https://cdn.rawgit.com/alvarotrigo/pagePiling.js/master/jquery.pagepiling.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.rawgit.com/alvarotrigo/pagePiling.js/master/jquery.pagepiling.css">
-  <title>Yash Munjal</title>
-</head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <body>
+
+    <div id="app">
+      <div class="fixed-section firstpage">
+        <h1 class="heading"><span class="glitch" data-text="I ">I </span><span class="glitch" data-text="am ">am
+          </span><span class="glitch" data-text="Yash">Yash</span><span class="glitch" data-text=" Munjal">
+            Munjal</span></h1>
+        <div class="background">
+          <div class="bg-block"></div>
+        </div>
+        <div class="middleground">
+          <div class="mg-block"></div>
+        </div>
+        <div class="foreground">
+          <div class="fg-block"></div>
+        </div>
+      </div>
+      <div class="fixed-section secondpage">
+        <h1 class="heading"><span>I am</span> <span>Yash</span> <span>Munjal</span></h1><img
+          src="./assets/images/me.jpeg" class="mascot-image">
+      </div>
+      <div class="thirdpage">
+        <div class="blur-bg"></div>
+        <div class="content-section" data-tilt data-tilt-full-page-listening data-tilt-glare data-tilt-max-glare="0.6"
+          data-tilt-max="10  " data-tilt-speed="8000">
+            <ul class="carousel my-carousel carousel--scale">
+              <input class="carousel__activator" type="radio" id="P" name="scale" checked="checked"/>
+              <input class="carousel__activator" type="radio" id="Q" name="scale"/>
+              <input class="carousel__activator" type="radio" id="R" name="scale"/>
+              <input class="carousel__activator" type="radio" id="S" name="scale"/>
+              <div class="carousel__controls">
+                <label class="carousel__control carousel__control--backward" for="S"></label>
+                <label class="carousel__control carousel__control--forward" for="Q"></label>
+              </div>
+              <div class="carousel__controls">
+                <label class="carousel__control carousel__control--backward" for="P"></label>
+                <label class="carousel__control carousel__control--forward" for="R"></label>
+              </div>
+              <div class="carousel__controls">
+                <label class="carousel__control carousel__control--backward" for="Q"></label>
+                <label class="carousel__control carousel__control--forward" for="S"></label>
+              </div>
+              <div class="carousel__controls">
+                <label class="carousel__control carousel__control--backward" for="R"></label>
+                <label class="carousel__control carousel__control--forward" for="P"></label>
+              </div>
+              <li class="carousel__slide">
+                <h1 class="option-heading">Academics</h1>
+              </li>
+              <li class="carousel__slide">
+                <h1 class="option-heading">Co-Curricular</h1>
+              </li>
+              <li class="carousel__slide">
+                <h1 class="option-heading">Skills</h1>
+              </li>
+              <li class="carousel__slide">
+                <h1 class="option-heading">Contact Me</h1>
+              </li>
+              <div class="carousel__indicators">
+                <label class="carousel__indicator" for="P"></label>
+                <label class="carousel__indicator" for="Q"></label>
+                <label class="carousel__indicator" for="R"></label>
+                <label class="carousel__indicator" for="S"></label>
+              </div>
+            </ul>
 
 
+          <!----========================-->
+          </div>
+        </div>
+        <div class="bottom-sect"></div>
+      </div>
+    <div class="mobile">
+      <div class="content">
+        <h1 class="glitch oh-snap" data-text="Oh ">Oh <span class="glitch" data-text="Snap">Snap</span></h1>
+        This site is specifically designed for pc use! Please use a pc to veiw the bottom-sect<p>Mobile Version Coming
+          soon</p>
+      </div>
+    </div>
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelector(".content-section-one"));
+    </script>
 
-<body>
-  <nav>
-    <a href="#home">YashMunjal</a>
-    <a href="#about">About Me</a>
-    <a href="#technical">Academics</a>
-    <a href="#Recreational">Co-Curricular Activities</a>
-    <a href="javascript:void(0);" class="bars">
-      <i class="fa fa-bars"></i>
-    </a>
-  </nav>
-  <div id="pagepiling">
-  <section id="home" class="section">
+  </body>
 
-  </section>
-  <section id="about" class="section">
-
-  </section>
-</div>
-</body>
-<script src="js/main.js"></script>
-
-</html>
+  </html>
