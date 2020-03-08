@@ -1,101 +1,439 @@
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="zxx">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Yash Munjal</title>
-  </head>
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Yash Munjal</title>
 
-  <body>
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
 
-    <div id="app">
-      <div class="fixed-section firstpage">
-        <h1 class="heading"><span class="glitch" data-text="I ">I </span><span class="glitch" data-text="am ">am
-          </span><span class="glitch" data-text="Yash">Yash</span><span class="glitch" data-text=" Munjal">
-            Munjal</span></h1>
-        <div class="background">
-          <div class="bg-block"></div>
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <!-- hero area -->
+  <section class="hero-area bg-primary" id="parallax">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-11 mx-auto">
+          <h1 class="text-white font-tertiary">Hi! I’m <br> Yash Munjal <br> Student / Web Designer</h1>
         </div>
-        <div class="middleground">
-          <div class="mg-block"></div>
-        </div>
-        <div class="foreground">
-          <div class="fg-block"></div>
-        </div>
-      </div>
-      <div class="fixed-section secondpage">
-        <h1 class="heading"><span>I am</span> <span>Yash</span> <span>Munjal</span></h1><img
-          src="./assets/images/me.jpeg" class="mascot-image">
-      </div>
-      <div class="thirdpage">
-        <div class="blur-bg"></div>
-        <div class="content-section" data-tilt data-tilt-full-page-listening data-tilt-glare data-tilt-max-glare="0.6"
-          data-tilt-max="10  " data-tilt-speed="8000">
-            <ul class="carousel my-carousel carousel--scale">
-              <input class="carousel__activator" type="radio" id="P" name="scale" checked="checked"/>
-              <input class="carousel__activator" type="radio" id="Q" name="scale"/>
-              <input class="carousel__activator" type="radio" id="R" name="scale"/>
-              <input class="carousel__activator" type="radio" id="S" name="scale"/>
-              <div class="carousel__controls">
-                <label class="carousel__control carousel__control--backward" for="S"></label>
-                <label class="carousel__control carousel__control--forward" for="Q"></label>
-              </div>
-              <div class="carousel__controls">
-                <label class="carousel__control carousel__control--backward" for="P"></label>
-                <label class="carousel__control carousel__control--forward" for="R"></label>
-              </div>
-              <div class="carousel__controls">
-                <label class="carousel__control carousel__control--backward" for="Q"></label>
-                <label class="carousel__control carousel__control--forward" for="S"></label>
-              </div>
-              <div class="carousel__controls">
-                <label class="carousel__control carousel__control--backward" for="R"></label>
-                <label class="carousel__control carousel__control--forward" for="P"></label>
-              </div>
-              <li class="carousel__slide">
-                <h1 class="option-heading">Academics</h1>
-              </li>
-              <li class="carousel__slide">
-                <h1 class="option-heading">Co-Curricular</h1>
-              </li>
-              <li class="carousel__slide">
-                <h1 class="option-heading">Skills</h1>
-              </li>
-              <li class="carousel__slide">
-                <h1 class="option-heading">Contact Me</h1>
-              </li>
-              <div class="carousel__indicators">
-                <label class="carousel__indicator" for="P"></label>
-                <label class="carousel__indicator" for="Q"></label>
-                <label class="carousel__indicator" for="R"></label>
-                <label class="carousel__indicator" for="S"></label>
-              </div>
-            </ul>
-
-
-          <!----========================-->
-          </div>
-        </div>
-        <div class="bottom-sect"></div>
-      </div>
-    <div class="mobile">
-      <div class="content">
-        <h1 class="glitch oh-snap" data-text="Oh ">Oh <span class="glitch" data-text="Snap">Snap</span></h1>
-        This site is specifically designed for pc use! Please use a pc to veiw the bottom-sect<p>Mobile Version Coming
-          soon</p>
       </div>
     </div>
-    <script src="assets/js/vendor.js"></script>
-    <script src="assets/js/vanilla-tilt.js"></script>
-    <script>
-      VanillaTilt.init(document.querySelector(".content-section-one"));
-    </script>
+    <div class="layer-bg w-100">
+      <img class="img-fluid w-100" src="images/illustrations/leaf-bg.png" alt="bg-shape">
+    </div>
+    <div class="layer" id="l2">
+      <img src="images/illustrations/dots-cyan.png" alt="bg-shape">
+    </div>
+    <div class="layer" id="l3">
+      <img src="images/illustrations/leaf-orange.png" alt="bg-shape">
+    </div>
+    <div class="layer" id="l4">
+      <img src="images/illustrations/dots-orange.png" alt="bg-shape">
+    </div>
+    <div class="layer" id="l5">
+      <img src="images/illustrations/leaf-yellow.png" alt="bg-shape">
+    </div>
+    <div class="layer" id="l6">
+      <img src="images/illustrations/leaf-cyan.png" alt="bg-shape">
+    </div>
+    <div class="layer" id="l7">
+      <img src="images/illustrations/dots-group-orange.png" alt="bg-shape">
+    </div>
+    <div class="layer" id="l8">
+      <img src="images/illustrations/leaf-pink-round.png" alt="bg-shape">
+    </div>
+    <div class="layer" id="l9">
+      <img src="images/illustrations/leaf-cyan-2.png" alt="bg-shape">
+    </div>
+    <!-- social icon -->
+    <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+      <li class="mb-3"><a class="text-white" href="#"><i class="ti-facebook"></i></a></li>
+      <li class="mb-3"><a class="text-white" href="#"><i class="ti-instagram"></i></a></li>
+      <li class="mb-3"><a class="text-white" href="#"><i class="ti-twitter"></i></a></li>
+    </ul>
+    <!-- /social icon -->
+  </section>
+  <!-- /hero area -->
 
-  </body>
+  <!-- about -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto text-center">
+          <p class="font-secondary paragraph-lg text-dark">Hi! My name is Yash Munjal. I am a 4th semester student of
+            Computer Science
+            and Engineering at Chitkara University. I have a knack of creating new things. Web designing is ubiquitos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /about -->
 
-  </html>
+  <!-- skills -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-title">Skills</h2>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+          <div class="card shadow text-center">
+            <div class="position-relative rounded-top progress-wrapper" data-color="#fdb157">
+              <div class="wave" data-progress="70%"></div>
+            </div>
+            <div class="card-footer bg-white">
+              <h4 class="card-title">UI/UX/IX Designing (70%)</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+          <div class="card shadow text-center">
+            <div class="position-relative rounded-top progress-wrapper" data-color="#9473e6">
+              <div class="wave" data-progress="30%"></div>
+            </div>
+            <div class="card-footer bg-white">
+              <h4 class="card-title">Development + Microservices (30%)</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+          <div class="card shadow text-center">
+            <div class="position-relative rounded-top progress-wrapper" data-color="#bdecf6">
+              <div class="wave" data-progress="40%"></div>
+            </div>
+            <div class="card-footer bg-white">
+              <h4 class="card-title">Frameworks(40%)</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+          <div class="card shadow text-center">
+            <div class="position-relative rounded-top progress-wrapper" data-color="#ffbcaa">
+              <div class="wave" data-progress="20%"></div>
+            </div>
+            <div class="card-footer bg-white">
+              <h4 class="card-title">DataBase Management and security (20%)</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /skills -->
+
+  <!-- experience -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-title">Experiences</h2>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center">
+          <img src="images/experience/icon-1.png" alt="icon">
+          <p class="mb-0">2019</p>
+          <h4>Web Head</h4>
+          <h6 class="text-light">Rangrezz-19' fest</h6>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center">
+          <img src="images/experience/icon-2.png" alt="icon">
+          <p class="mb-0">2019-20</p>
+          <h4>Web Developer</h4>
+          <h6 class="text-light">Association for Computing Machinery</h6>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center">
+          <img src="images/experience/icon-3.png" alt="icon">
+          <p class="mb-0">2019-20</p>
+          <h4>Web Head</h4>
+          <h6 class="text-light">Institution of Engineers,India</h6>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center">
+          <img src="images/experience/icon-2.png" alt="icon">
+          <p class="mb-0">2019-</p>
+          <h4>Active Developer</h4>
+          <h6 class="text-light">Finnrooms</h6>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center">
+          <img src="images/experience/icon-3.png" alt="icon">
+          <p class="mb-0">2019-</p>
+          <h4>Active Developer</h4>
+          <h6 class="text-light">MDG,Chandigarh</h6>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center">
+          <img src="images/experience/icon-1.png" alt="icon">
+          <p class="mb-0">2019-21</p>
+          <h4>Member</h4>
+          <h6 class="text-light">Member of Cultural club C2S2-Custody</h6>
+        </div>
+        <div class="col-lg-3 col-md-4 text-center">
+          <img src="images/experience/icon-2.png" alt="icon">
+          <p class="mb-0">2019-21</p>
+          <h4>Member</h4>
+          <h6 class="text-light">Member of Cultural Club EPIC</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ./experience -->
+
+  <!-- education -->
+  <section class="section position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-title">Education</h2>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-80">
+          <div class="d-flex">
+            <div class="mr-lg-5 mr-3">
+              <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+            </div>
+            <div>
+              <p class="text-dark mb-1">2016</p>
+              <h4>Class 10th: 10 CGPA</h4>
+              <p class="mb-0 text-light">Pratap Public School,Karnal</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-80">
+          <div class="d-flex">
+            <div class="mr-lg-5 mr-3">
+              <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+            </div>
+            <div>
+              <p class="text-dark mb-1">2018</p>
+              <h4>Class 12th: 89.6%</h4>
+              <p class="mb-0 text-light">Pratap Public School,Karnal</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-80">
+          <div class="d-flex">
+            <div class="mr-lg-5 mr-3">
+              <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+            </div>
+            <div>
+              <p class="text-dark mb-1">1st Semester</p>
+              <h4>CGPA:9.44</h4>
+              <p class="mb-0 text-light">Chitkara university</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-80">
+          <div class="d-flex">
+            <div class="mr-lg-5 mr-3">
+              <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+            </div>
+            <div>
+              <p class="text-dark mb-1">2nd Semester</p>
+              <h4>CGPA:9.40</h4>
+              <p class="mb-0 text-light">Chitkara University</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-80">
+          <div class="d-flex">
+            <div class="mr-lg-5 mr-3">
+              <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+            </div>
+            <div>
+              <p class="text-dark mb-1">3rd Semester</p>
+              <h4>CGPA:9.2</h4>
+              <p class="mb-0 text-light">Chitkara university</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bg image -->
+    <img class="img-fluid edu-bg-image w-100" src="images/backgrounds/education-bg.png" alt="bg-image">
+  </section>
+  <!-- /education -->
+
+  <!-- services -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title">Achievements</h2>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="card hover-shadow shadow">
+            <div class="card-body text-center px-4 py-5">
+              <i class="ti-medall icon mb-5 d-inline-block"></i>
+              <h4 class="mb-4">ACM Web-O-Mania</h4>
+              <p>Won the 1st price in ACM Web-O-Mania</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="card active-bg-primary hover-shadow shadow">
+            <div class="card-body text-center px-4 py-5">
+              <i class="ti-medall icon mb-5 d-inline-block"></i>
+              <h4 class="mb-4">ACM-Spardha</h4>
+              <p>Won 3rd prize at ACM Spardha.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="card hover-shadow shadow">
+            <div class="card-body text-center px-4 py-5">
+              <i class="ti-panel icon mb-5 d-inline-block"></i>
+              <h4 class="mb-4">FreeCodeCamp certified</h4>
+              <p>Certified Free Code Camp Front-end Web developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /services -->
+
+  <!-- portfolio
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title">The Lab</h2>
+        </div>
+      </div>
+      <div class="row shuffle-wrapper">
+        <div class="col-lg-4 col-6 mb-4 shuffle-item">
+          <div class="position-relative rounded hover-wrapper">
+            <img src="images/portfolio/item-1.png" alt="portfolio-image" class="img-fluid rounded w-100">
+            <div class="hover-overlay">
+              <div class="hover-content">
+                <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6 mb-4 shuffle-item">
+          <div class="position-relative rounded hover-wrapper">
+            <img src="images/portfolio/item-2.png" alt="portfolio-image" class="img-fluid rounded w-100">
+            <div class="hover-overlay">
+              <div class="hover-content">
+                <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6 mb-4 shuffle-item">
+          <div class="position-relative rounded hover-wrapper">
+            <img src="images/portfolio/item-3.png" alt="portfolio-image" class="img-fluid rounded w-100">
+            <div class="hover-overlay">
+              <div class="hover-content">
+                <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6 mb-4 shuffle-item">
+          <div class="position-relative rounded hover-wrapper">
+            <img src="images/portfolio/item-4.png" alt="portfolio-image" class="img-fluid rounded w-100">
+            <div class="hover-overlay">
+              <div class="hover-content">
+                <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-6 mb-4 shuffle-item">
+          <div class="position-relative rounded hover-wrapper">
+            <img src="images/portfolio/item-5.png" alt="portfolio-image" class="img-fluid rounded w-100">
+            <div class="hover-overlay">
+              <div class="hover-content">
+                <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  projects-->
+  <!-- contact -->
+  <section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title">Contact Info</h2>
+        </div>
+        <div class="col-lg-8 mx-auto">
+          <div class="bg-white rounded text-center p-5 shadow-down">
+            <h4 class="mb-80">Contact Form</h4>
+            <form action="#" class="row">
+              <div class="col-md-6">
+                <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
+              </div>
+              <div class="col-md-6">
+                <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4">
+              </div>
+              <div class="col-12">
+                <textarea name="message" id="message" class="form-control px-0 mb-4"
+                  placeholder="Type Message Here"></textarea>
+              </div>
+              <div class="col-lg-6 col-10 mx-auto">
+                <button class="btn btn-primary w-100">send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /contact -->
+
+  <!-- footer -->
+  <footer class="bg-dark footer-section">
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5 class="text-light">Email</h5>
+            <p class="text-white paragraph-lg font-secondary">yashmu45@gmail.com</p>
+          </div>
+          <div class="col-md-3">
+            <h5 class="text-light">Phone</h5>
+            <p class="text-white paragraph-lg font-secondary">+91 946603194</p>
+          </div>
+          <div class="col-md-3">
+            <h5 class="text-light"><i class="ti-github"></i></h5>
+            <p class="text-white paragraph-lg font-secondary"><a href="http://github.com/yashmunjal" style="text-decoration: none;color: #fff;">YashMunjal</a></p>
+          </div>
+          <div class="col-md-3">
+            <h5 class="text-light"><i class="ti-linkedin"></i></h5>
+            <p class="text-white paragraph-lg font-secondary"><a href="http://www.linkedin.com/in/yashmunjal45" style="text-decoration: none;color: #fff;">YashMunjal45</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /footer -->
+
+  <!-- jQuery -->
+  <script src="plugins/jQuery/jquery.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/shuffle/shuffle.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
